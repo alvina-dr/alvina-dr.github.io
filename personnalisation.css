@@ -15,9 +15,8 @@ body {
 .menu { /*CASE*/
     width: 100%; /*largeur en pourcentage de la fenêtre du navigateur*/
     height: 70px;
-    background-color: white;
 }
-ul {
+.menu ul {
 	padding:0; /*décalage vers la droite*/
 	margin:0; /*décalage vers le bas*/
 	list-style-type:none;
@@ -25,11 +24,11 @@ ul {
 	top: 20px; 
 	left: 140px;
  }
-li {
+.menu li {
 	margin-left:5px;
 	float:left; /*pour IE*/
  }
-ul li a {
+.menu ul li a {
 	display:block;
 	float:left;   
 	width:200px;
@@ -40,7 +39,7 @@ ul li a {
  	font-weight: bold;
  	font-size: 25px;
  }
-ul li a:hover {
+.menu ul li a:hover {
  	background:black url(pixel blanc.png) repeat-x;
  	color:lightgrey;
  }  
@@ -48,79 +47,62 @@ ul li a:hover {
  	 color:lightblue;
  }
 /*----------------------------------------------------ACCUEIL--------------------------------------------------------------------*/
+.bande_accueil /*CASE*/
+ {
+	height: 520px;
+	top: 70px; 
+ }
 .prénom {
 	font-family: Montserrat;
  	font-weight: 800;
  	font-size: 125px; 
  	color:white;
-	position: absolute;
-	top: 100px; 
-	left: 50px;
-	z-index: 3;
+	/*margin-left: 50px;
+	margin-bottom: 0px;*/
+	  margin: 0;
+
 }
 .nom{	
 	font-family: Roboto;
  	font-weight: 500;
  	font-size: 34px; 
- 	color:white;
- 	position: absolute;
-	top: 280px; 
-	left: 50px;
-	z-index: 3;
+ 	color:white; 
+	/*margin-left: 50px;
+	margin-top: 0px;*/
+	  margin: 0;
  }
 .fond_nom {
- 	position: absolute;
-	top: 70px; 
-	left: auto;
+	top: 80px; 
+	position: absolute;
+	z-index: -1;
 
  }
-.bande_accueil /*CASE*/
- {
-    background-color: white;
-	height: 520px;
- }
-.présentation {
-	width: 97%;
-	height: 600px;
-	padding-left:1.5%;
-    background-color: white;
- }
 
-h3 {
- 	font-family: Roboto;
- 	font-size: 30px;
- 	color:black;
- 	font-weight: bold; 
- }
-h4 {
- 	font-family: Roboto;
- 	font-size: 25px;
- 	color:grey;
- 	/*margin:-10px;*/
- 	line-height: normal;
- }
-#présentation1 {
- 	padding-left: 1%;
- 	padding-right: 51%;
- }
-#logo_jay {
-	position:absolute;
-	top: 110%;
-	 padding-left: 10%;
+ /*----------------------------------------------------CARROUSSEL--------------------------------------------------------------------*/
+
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+
+.carousel {
+  position: relative;
+  overflow-x: hidden;
+  height: 500px;
+  justify-content: center;
 }
-#présentation2-1 {
-	position:absolute;
-	top: 120%;
- 	padding-left: 51%;
- 	padding-right: 1%;
- 	/*padding-top: 4%;*/
- }
-#présentation2-2 {
-	position:absolute;
-	top: 130%;
-	padding-left: 51%;
- 	padding-right: 1%;
- }
+
+
+.carousel-cell {
+  height: 400px;
+  width: 50%;
+  margin: 40px /*5%*/; /* total width = 50% + 5% + 5% = 60% */
+  opacity: 1;
+  border-radius: 5px; /*arrondi des angles*/
+  counter-increment: carousel-cell;
+}
+
+
 /*-------------------------------------------------------IMAGE------------------------------------------------------------------*/
 .image {
 	width:32.5%;
@@ -207,3 +189,55 @@ h4 {
        	z-index: 1;
 }
 
+/*------------------------------------------------------ RÉSEAUX SOCIAUX -----------------------------------------------*/
+.social_menu {
+	padding-top: 20px;
+	position: relative;
+	width: 100%;
+	background-color: grey;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-bottom: 20px;
+}
+.social_menu ul {
+    display: flex;
+    align-self: center;
+}
+.social_menu ul li {
+    list-style: none; /*enlève les puces*/
+    margin: 0 10px; /*séparation horizontale entre les boutons*/
+}
+.social_menu ul li .fa {
+    color: #000000; /*couleur des icônes*/
+    font-size: 25px; /*taille des icônes*/
+    line-height: 50px;
+    transition: .5s;
+}
+.social_menu ul li .fa:hover {
+    color: #ffffff; /*couleur des icônes lorsqu'elles sont survolées*/
+}
+.social_menu ul li a {
+    position: relative;
+    display: block;
+    width: 50px; /*largeur des rectangles*/
+    height: 50px; /*hauteur des rectangles*/
+    border-radius: 50% ; /*rondeur des angles*/
+    background-color: white; /*couleur des rectangles*/
+    text-align: center;
+    transition: 0.5s; /*temps de la transition/animation*/
+    transform: translate(0,0px);
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5); /*ombre des cercles*/
+}
+.social_menu ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -10px); /*animation quand les rectangles sont survolés*/
+}
+.social_menu ul li:nth-child(1) a:hover { /*couleur transition LinkedIn*/
+    background-color: #0e76a8;
+}
+.social_menu ul li:nth-child(2) a:hover { /*couleur transition Instagram*/
+    background-color: #e4405f;
+}
+.social_menu ul li:nth-child(3) a:hover { /*couleur transition Youtube*/
+    background-color: #cd201f;
+}
