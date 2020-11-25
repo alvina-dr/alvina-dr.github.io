@@ -5,6 +5,7 @@
 
 body {
 	margin: 0 auto;
+	background-color: black;
 }
 .fin_de_page { /*CASE*/
 	width: 100%; /*largeur en pourcentage de la fenêtre du navigateur*/
@@ -57,8 +58,10 @@ body {
  	font-weight: 800;
  	font-size: 125px; 
  	color:white;
-	margin-left: 50px;
+	margin-left: 100px;
 	margin-bottom: 0px;
+	opacity: 0.6;
+	position:relative;
 
 }
 .nom{	
@@ -66,9 +69,10 @@ body {
  	font-weight: 500;
  	font-size: 34px; 
  	color:white; 
-	margin-left: 50px;
+	margin-left: 100px;
 	margin-top: 0px;
-
+	opacity: 0.6;
+	position:relative;
  }
 .fond_nom {
 	top: 70px;
@@ -101,6 +105,44 @@ body {
   counter-increment: carousel-cell;
 }
 
+ /*---------------------------------------------------- DUT MMI --------------------------------------------------------------------*/
+
+.DUT_MMI_case_title {
+	margin-top: 100px;
+	background-color: white;
+	border-radius:10px;
+	margin-bottom: 20px;
+}
+
+.DUT_MMI_title {
+	font-family: Montserrat;
+	font-size: 800%;
+	font-weight: bold;
+	margin: 0;
+	margin-left: 40px;
+	color: black;
+}
+
+.DUT_MMI_case {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.DUT_MMI_a{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%
+}
+.DUT_MMI_image {
+	border-radius: 50px;
+	width: 80%;
+	align-self: center;
+}
+.DUT_MMI_image:hover {
+	opacity:0.5;
+}
 
 /*-------------------------------------------------------IMAGE------------------------------------------------------------------*/
 .image {
@@ -111,9 +153,31 @@ body {
 .image:hover {
 	filter: brightness(25%);
 }
-/*----------------------------------------------------PHOTOMONTAGE--------------------------------------------------------------*/
-.photomontage {
-	padding-left:1.5%;
+/*-------------------------------------------------------------------------------------DUT MMI------------------------------------------------------------------------------------------------*/
+
+.presentation_dut_mmi_case {
+	margin-top: 100px;
+	background-color: black;
+	margin-bottom: 100px;
+
+}
+.presentation_dut_mmi_text{
+	color: white;
+	font-family: Roboto; 
+	font-size: 150%;
+	margin-left: 10%;
+	margin-right: 10%;
+	text-align: center;
+	font-weight: bold;
+}
+
+.DUT_MMI_image_titre {
+	text-align: center;
+	color: white;
+	font-family: Roboto;
+	font-weight: bold;
+	font-size: 150%;
+	margin-bottom: 10px;
 }
 /*----------------------------------------------------PHOTOGRAPHIE--------------------------------------------------------------*/
 .photographie {
@@ -190,7 +254,6 @@ body {
 
 /*------------------------------------------------------ RÉSEAUX SOCIAUX -----------------------------------------------*/
 .social_menu {
-	padding-top: 20px;
 	position: relative;
 	width: 100%;
 	background-color: grey;
@@ -198,10 +261,12 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	padding-bottom: 20px;
+	padding-top: 20px;
 }
 .social_menu ul {
     display: flex;
     align-self: center;
+    padding-left: 0px;
 }
 .social_menu ul li {
     list-style: none; /*enlève les puces*/
