@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+/*----------------------------------------------------GÉNÉRAL--------------------------------------------------------------------*/
+
+body {
+	margin: 0 auto;
+	background-color: #161616;
+	color: #F0F0F0;
+}
+.fin_de_page { /*CASE*/
+	width: 100%; /*largeur en pourcentage de la fenêtre du navigateur*/
+    height: 400px;
+    background-color: darkgrey;
+} 
+/*-------------------------------------------------------MENU--------------------------------------------------------------------*/
+.menu { /*CASE*/
+    width: 100%; /*largeur en pourcentage de la fenêtre du navigateur*/
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: #0D0D0D;
+}
+.menu ul {
+	padding:0; /*décalage vers la droite*/
+	margin:0; /*décalage vers le bas*/
+	list-style-type:none;
+	position: absolute;
+	align-self: center;
+	margin-top: 15px;
+ }
+.menu li {
+	margin-left:2.5px;
+	margin-right: 2.5px;
+	float:left; /*pour IE*/
+ }
+.menu ul li a {
+	display:block;
+	color: darkgrey; /*#DCDCDC;*/
+ 	text-decoration:none;
+ 	text-align:center;
+ 	font-family: Roboto;
+ 	font-weight: bold;
+ 	font-size: 35px;
+ 	margin-left:30px;
+ 	margin-right:30px;
+ }
+.menu ul li a:hover {
+ 	background:black url(pixel blanc.png) repeat-x;
+ 	color:lightgrey;
+ }  
+ #page_actuelle {
+ 	 color:#DE6110;
+ }
+/*----------------------------------------------------ACCUEIL--------------------------------------------------------------------*/
+.bande_accueil /*CASE*/
+ {
+	top: 70px; 
+	display: flex;
+ }
+.bande_accueil_gauche {
+	width: 40%;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+}
+.bande_accueil_droite {
+	width: 60%;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+}
+.couverture {
+	opacity: 0.6;
+	border-radius: 50px;
+	width: 80%;
+	margin-top: 60px; 
+}
+
+.prénom {
+	font-family: Montserrat;
+ 	font-weight: 800;
+ 	font-size: 150px; 
+ 	color:#F0F0F0;
+	margin: 0px;
+	opacity: 0.9;
+	margin-top: 180px;
+
+}
+.nom{	
+	font-family: Roboto;
+ 	font-weight: 500;
+ 	font-size: 41px; 
+ 	color:#F0F0F0; 
+	margin-top: 0px;
+	opacity: 0.6;
+	position:relative;
+	position:absolute;
+	top: 392px;
+ }
+.fond_nom {
+	top: 70px;
+	position: absolute;
+	z-index: -1;
+
+ }
+
+ /*----------------------------------------------------CARROUSSEL--------------------------------------------------------------------*/
+
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+
+.carousel {
+  position: relative;
+  overflow-x: hidden;
+  height: 500px;
+  justify-content: center;
+}
+
+
+.carousel-cell {
+  height: 400px;
+  width: 50%;
+  margin: 40px /*5%*/; /* total width = 50% + 5% + 5% = 60% */
+  opacity: 1;
+  border-radius: 5px; /*arrondi des angles*/
+  counter-increment: carousel-cell;
+}
+
+ /*---------------------------------------------------- DUT MMI --------------------------------------------------------------------*/
+
+.DUT_MMI_case_title {
+	margin-top: 100px;
+	background-color: #F0F0F0;
+	border-radius:20px 0px 0px 20px;
+	margin-bottom: 20px;
+	margin-left: 100px;
+	opacity: 0.9;
+}
+
+.DUT_MMI_title {
+	font-family: Montserrat;
+	font-size: 800%;
+	font-weight: bold;
+	margin: 0;
+	margin-left: 40px;
+	color: #161616;
+}
+
+.DUT_MMI_case {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+	margin-top: 50px;
+}
+
+.DUT_MMI_a{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%
+}
+.DUT_MMI_image {
+	border-radius: 50px;
+	width: 80%;
+	align-self: center;
+}
+.DUT_MMI_image:hover {
+	opacity:0.5;
+}
+
+/*-------------------------------------------------------IMAGE------------------------------------------------------------------*/
+.image {
+	width:32.5%;
+	z-index: 1;
+	position:static;
+}
+.image:hover {
+	filter: brightness(25%);
+}
+/*-------------------------------------------------------------------------------------DUT MMI------------------------------------------------------------------------------------------------*/
+
+.presentation_dut_mmi_case {
+	margin-top: 100px;
+	margin-bottom: 100px;
+
+}
+.presentation_dut_mmi_text{
+	color: #F0F0F0;
+	font-family: Roboto; 
+	font-size: 150%;
+	margin-left: 20%;
+	margin-right: 20%;
+	text-align: center;
+	font-weight: bold;
+}
+
+.DUT_MMI_image_titre {
+	text-align: center;
+	color: #F0F0F0;
+	font-family: Roboto;
+	font-weight: bold;
+	font-size: 150%;
+	margin-bottom: 10px;
+}
+/*---------------------------------------------------- PROJETS PERSO --------------------------------------------------------------*/
+
+.Section_Projet_case {
+	background-color: #F0F0F0;
+	border-radius:20px;
+	margin-bottom: 20px;
+	width:50%; 
+	margin: auto;
+	margin-top: 100px;
+}
+
+.Section_Projet_title {
+	font-family: Montserrat;
+	font-size: 400%;
+	font-weight: bold;
+	margin: 0;
+	margin-left: 40px;
+	color: #161616;
+	text-align: center;
+}
+
+/*-------------------------------------------------------VIDÉO-------------------------------------------------------------------*/
+.cadre_vidéo { /*CASE*/
+	width: 100%; /*largeur en pourcentage de la fenêtre du navigateur*/
+	background-color: #F0F0F0;
+	height: 700px;
+}
+.vidéo {
+		padding-left:12.25%;
+		padding-top:20px;
+		width:75%;
+		height: 75%;
+}
+/*------------------------------------------------------RENDU 3D-----------------------------------------------------------------*/
+.rendu_3D {
+	padding-left:1.5%;
+}
+/*----------------------------------------------------CONTACT--------------------------------------------------------------------*/
+#tel {
+ 	position: absolute;
+	top: 10px; 
+	left: 80px;
+	z-index: 3;
+}
+#tel0 {
+ 	position: absolute;
+	top: 35px; 
+	left: 20px;
+}
+#mail {
+ 	position: absolute;
+	top: 70px; 
+	left: 80px;
+	z-index: 3;	
+}
+#mail0 {
+ 	position: absolute;
+	top: 95px; 
+	left: 20px;
+}
+#insta {
+ 	position: absolute;
+	top: 130px; 
+	left: 80px;
+}
+#insta0 {
+ 	position: absolute;
+	top: 155px; 
+	left: 20px;
+}
+#intro_contact {
+	   padding-left: 70px; 
+	   padding-top: 10px;
+}
+.contact { /*CASE*/
+	width: 100%; /*largeur en pourcentage de la fenêtre du navigateur*/
+	background-color: white;
+	height: 500px;
+}
+.contact_moyens {
+	/*padding-left:500px;*/
+	position: absolute;
+	top: 130px; 
+	left: 100px;
+	width: 50%; /*largeur en pourcentage de la fenêtre du navigateur*/
+    height: 240px;
+    background-color: transparent;
+       	z-index: 1;
+}
+
+/*------------------------------------------------------ RÉSEAUX SOCIAUX -----------------------------------------------*/
+.social_menu {
+	position: relative;
+	width: 100%;
+	background-color: grey;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+.social_menu ul {
+    display: flex;
+    align-self: center;
+    padding-left: 0px;
+}
+.social_menu ul li {
+    list-style: none; /*enlève les puces*/
+    margin: 0 10px; /*séparation horizontale entre les boutons*/
+}
+.social_menu ul li .fa {
+    color: #000000; /*couleur des icônes*/
+    font-size: 25px; /*taille des icônes*/
+    line-height: 50px;
+    transition: .5s;
+}
+.social_menu ul li .fa:hover {
+    color: #ffffff; /*couleur des icônes lorsqu'elles sont survolées*/
+}
+.social_menu ul li a {
+    position: relative;
+    display: block;
+    width: 50px; /*largeur des rectangles*/
+    height: 50px; /*hauteur des rectangles*/
+    border-radius: 50% ; /*rondeur des angles*/
+    background-color: white; /*couleur des rectangles*/
+    text-align: center;
+    transition: 0.5s; /*temps de la transition/animation*/
+    transform: translate(0,0px);
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5); /*ombre des cercles*/
+}
+.social_menu ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -10px); /*animation quand les rectangles sont survolés*/
+}
+.social_menu ul li:nth-child(1) a:hover { /*couleur transition LinkedIn*/
+    background-color: #0e76a8;
+}
+.social_menu ul li:nth-child(2) a:hover { /*couleur transition Instagram*/
+    background-color: #e4405f;
+}
+.social_menu ul li:nth-child(3) a:hover { /*couleur transition Youtube*/
+    background-color: #cd201f;
+}
+/*------------------------------------------------------ FOOTER -----------------------------------------------*/
+
+.by {
+	background-color: black;
+	height: 20px;
+	padding-top: 0px;
+	padding-bottom: 40px;
+}
+.by_text {
+	margin-top: 10px;
+	font-family: Roboto;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+}
