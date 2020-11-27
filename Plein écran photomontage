@@ -1,5 +1,0 @@
-var numeroImage; 
-var img = document.createElement("img");
-img.src = "0 - Photomontages/P1.jpg";
-var block = document.getElementById("x");
-block.appendChild(img);
