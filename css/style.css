@@ -84,7 +84,11 @@ body {
 	align-items: center;
 }
 
-
+.gallerie_image {
+	/*border-radius: 50px;*/
+	width: 80%;
+	align-self: center;
+}
 
 /*-------------------------------------------------------MENU--------------------------------------------------------------------*/
 .menu { /*CASE*/
