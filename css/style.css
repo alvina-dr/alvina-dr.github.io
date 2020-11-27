@@ -13,6 +13,79 @@ body {
     height: 400px;
     background-color: darkgrey;
 } 
+
+/*---------------------------------------- TEXTES -----------------------------------------------*/
+.presentation_text{
+	color: #F0F0F0;
+	font-family: Roboto; 
+	font-size: 150%;
+	margin-left: 20%;
+	margin-right: 20%;
+	font-weight: bold;
+	text-align: center;
+}
+
+.explication_text {
+	color: #F0F0F0;
+	font-family: Roboto; 
+	font-size: 150%;
+	margin-left: 5%;
+	margin-right: 5%
+	font-weight: bold;
+	text-align: justify;
+}
+
+.DUT_MMI_title {
+	font-family: Montserrat;
+	font-size: 800%;
+	font-weight: bold;
+	margin: 0;
+	margin-left: 40px;
+	color: #161616;
+}
+
+.lien {
+	color:#DE6110;
+	text-decoration: underline;
+}
+/*---------------------------------------- CASES -------------------------------------------------*/
+
+.DUT_MMI_case_title {
+	margin-top: 100px;
+	background-color: #F0F0F0;
+	border-radius:20px 0px 0px 20px;
+	margin-bottom: 20px;
+	margin-left: 100px;
+	opacity: 0.9;
+}
+
+.row_simple {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	display: flex;
+	flex-direction:row;
+	justify-content: center;
+	align-items: center;
+}
+
+.column_simple {
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+#half {
+	width: 50%;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
 /*-------------------------------------------------------MENU--------------------------------------------------------------------*/
 .menu { /*CASE*/
     width: 100%; /*largeur en pourcentage de la fenêtre du navigateur*/
@@ -132,23 +205,7 @@ body {
 
  /*---------------------------------------------------- DUT MMI --------------------------------------------------------------------*/
 
-.DUT_MMI_case_title {
-	margin-top: 100px;
-	background-color: #F0F0F0;
-	border-radius:20px 0px 0px 20px;
-	margin-bottom: 20px;
-	margin-left: 100px;
-	opacity: 0.9;
-}
 
-.DUT_MMI_title {
-	font-family: Montserrat;
-	font-size: 800%;
-	font-weight: bold;
-	margin: 0;
-	margin-left: 40px;
-	color: #161616;
-}
 
 .DUT_MMI_case {
 	display: flex;
@@ -172,7 +229,7 @@ body {
 	opacity:0.5;
 }
 
-/*-------------------------------------------------------IMAGE------------------------------------------------------------------*/
+/*------------------------------------------------------- MEDIAS ------------------------------------------------------------------*/
 .image {
 	width:32.5%;
 	z-index: 1;
@@ -181,6 +238,15 @@ body {
 .image:hover {
 	filter: brightness(25%);
 }
+
+/*.video {
+	margin-right:0;
+	margin-left:0;
+	margin-top: 0;
+	margin-bottom: 0;
+	position: relative;
+
+}
 /*-------------------------------------------------------------------------------------DUT MMI------------------------------------------------------------------------------------------------*/
 
 .presentation_dut_mmi_case {
@@ -188,15 +254,7 @@ body {
 	margin-bottom: 100px;
 
 }
-.presentation_dut_mmi_text{
-	color: #F0F0F0;
-	font-family: Roboto; 
-	font-size: 150%;
-	margin-left: 20%;
-	margin-right: 20%;
-	text-align: center;
-	font-weight: bold;
-}
+
 
 .DUT_MMI_image_titre {
 	text-align: center;
@@ -206,6 +264,7 @@ body {
 	font-size: 150%;
 	margin-bottom: 10px;
 }
+
 /*---------------------------------------------------- PROJETS PERSO --------------------------------------------------------------*/
 
 .Section_Projet_case {
@@ -225,75 +284,6 @@ body {
 	margin-left: 40px;
 	color: #161616;
 	text-align: center;
-}
-
-/*-------------------------------------------------------VIDÉO-------------------------------------------------------------------*/
-.cadre_vidéo { /*CASE*/
-	width: 100%; /*largeur en pourcentage de la fenêtre du navigateur*/
-	background-color: #F0F0F0;
-	height: 700px;
-}
-.vidéo {
-		padding-left:12.25%;
-		padding-top:20px;
-		width:75%;
-		height: 75%;
-}
-/*------------------------------------------------------RENDU 3D-----------------------------------------------------------------*/
-.rendu_3D {
-	padding-left:1.5%;
-}
-/*----------------------------------------------------CONTACT--------------------------------------------------------------------*/
-#tel {
- 	position: absolute;
-	top: 10px; 
-	left: 80px;
-	z-index: 3;
-}
-#tel0 {
- 	position: absolute;
-	top: 35px; 
-	left: 20px;
-}
-#mail {
- 	position: absolute;
-	top: 70px; 
-	left: 80px;
-	z-index: 3;	
-}
-#mail0 {
- 	position: absolute;
-	top: 95px; 
-	left: 20px;
-}
-#insta {
- 	position: absolute;
-	top: 130px; 
-	left: 80px;
-}
-#insta0 {
- 	position: absolute;
-	top: 155px; 
-	left: 20px;
-}
-#intro_contact {
-	   padding-left: 70px; 
-	   padding-top: 10px;
-}
-.contact { /*CASE*/
-	width: 100%; /*largeur en pourcentage de la fenêtre du navigateur*/
-	background-color: white;
-	height: 500px;
-}
-.contact_moyens {
-	/*padding-left:500px;*/
-	position: absolute;
-	top: 130px; 
-	left: 100px;
-	width: 50%; /*largeur en pourcentage de la fenêtre du navigateur*/
-    height: 240px;
-    background-color: transparent;
-       	z-index: 1;
 }
 
 /*------------------------------------------------------ RÉSEAUX SOCIAUX -----------------------------------------------*/
@@ -362,5 +352,5 @@ body {
 	font-family: Roboto;
 	font-weight: bold;
 	text-align: center;
-	color: white;
+	color: #DE6110;
 }
