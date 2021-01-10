@@ -213,6 +213,10 @@ body {
 	color: darkgrey;
 	font-weight: 600;
 	margin: 0;
+	background-color:#de621054;
+}
+.contour {
+	color:#ffffff00 ;
 }
 .present_date {
 	font-family: Poppins;
@@ -226,6 +230,7 @@ body {
 	width:1.75%;
 	margin: 0;
 	margin-top: 270px;
+	opacity: 0.8;
 }
  /*------------PHOTOMONTAGE--------------*/
 .photomontage_bande /*CASE*/
