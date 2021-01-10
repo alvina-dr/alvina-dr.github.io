@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
 /*----------------------------------------------------GÉNÉRAL--------------------------------------------------------------------*/
 
 body {
 	margin: 0 auto;
-	background-color: #161616;
-	color: #F0F0F0;
+	background: repeat url(../RESSOURCES/fond.png);
+	background-size: 35%;
+	background-color: #0c0c0c;
 }
 .fin_de_page { /*CASE*/
 	width: 100%; /*largeur en pourcentage de la fenêtre du navigateur*/
@@ -18,27 +20,24 @@ body {
 .presentation_text{
 	color: #F0F0F0;
 	font-family: Roboto; 
-	font-size: 150%;
+	font-size: 15px;
 	margin-left: 20%;
 	margin-right: 20%;
-	font-weight: bold;
 	text-align: center;
 }
 
 .explication_text {
 	color: #F0F0F0;
 	font-family: Roboto; 
-	font-size: 150%;
+	font-size: 15px;
 	margin-left:5%;
 	margin-right:5%;
-	font-weight: bold;
 	text-align: justify;
 }
 
 .DUT_MMI_title {
 	font-family: Montserrat;
-	font-size: 800%;
-	font-weight: bold;
+	font-size: 700%;
 	margin: 0;
 	margin-left: 40px;
 	color: #161616;
@@ -51,11 +50,11 @@ body {
 /*---------------------------------------- CASES -------------------------------------------------*/
 
 .DUT_MMI_case_title {
-	margin-top: 100px;
+	margin-top: 110px;
 	background-color: #F0F0F0;
 	border-radius:20px 0px 0px 20px;
 	margin-bottom: 20px;
-	margin-left: 100px;
+	margin-left: 300px;
 	opacity: 0.9;
 }
 
@@ -90,98 +89,115 @@ body {
 	align-self: center;
 }
 
+.gallerie_photo {
+	/*border-radius: 50px;*/
+	width: 100%;
+	align-self: center;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.gallerie {
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
 /*-------------------------------------------------------MENU--------------------------------------------------------------------*/
-.menu { /*CASE*/
+.navbar { /*CASE*/
     width: 100%; /*largeur en pourcentage de la fenêtre du navigateur*/
     height: 70px;
     display: flex;
     flex-direction: column;
     align-content: center;
-    background-color: #0D0D0D;
+	background-color: #0D0D0D;
+	position: fixed;
+	z-index: 5;
 }
-.menu ul {
+.navbar ul {
 	padding:0; /*décalage vers la droite*/
 	margin:0; /*décalage vers le bas*/
 	list-style-type:none;
 	position: absolute;
-	align-self: center;
-	margin-top: 15px;
+	align-self: flex-end;
+	margin-top: 20px;
  }
-.menu li {
+.navbar li {
 	margin-left:2.5px;
 	margin-right: 2.5px;
 	float:left; /*pour IE*/
  }
-.menu ul li a {
+.navbar ul li a {
 	display:block;
 	color: darkgrey; /*#DCDCDC;*/
  	text-decoration:none;
  	text-align:center;
- 	font-family: Roboto;
- 	font-weight: bold;
- 	font-size: 35px;
+ 	font-family: Poppins;
+ 	font-size: 20px;
  	margin-left:30px;
  	margin-right:30px;
  }
-.menu ul li a:hover {
- 	background:black url(pixel blanc.png) repeat-x;
+.navbar ul li a:hover {
  	color:lightgrey;
  }  
  #page_actuelle {
  	 color:#DE6110;
  }
-/*----------------------------------------------------ACCUEIL--------------------------------------------------------------------*/
-.bande_accueil /*CASE*/
- {
-	top: 70px; 
+ /*------------Prénom-Nom--------------*/
+ .haut {
 	display: flex;
- }
-.bande_accueil_gauche {
-	width: 40%;
+	justify-content: flex-start;
 	margin: 0;
-	display: flex;
-	justify-content: center;
+	margin-left: 30px;
 }
-.bande_accueil_droite {
-	width: 60%;
-	margin: 0;
-	display: flex;
-	justify-content: center;
+.icone {
+	align-self: center;
+	position: absolute;
+	margin-top: 25px;
+	width: 3%;
 }
-.couverture {
-	opacity: 0.6;
-	border-radius: 50px;
-	width: 80%;
-	margin-top: 60px; 
-}
-
-.prénom {
-	font-family: Montserrat;
- 	font-weight: 800;
- 	font-size: 150px; 
- 	color:#F0F0F0;
+ .prénom {
+	font-family: Poppins;
+	font-size: 20px; 
+	font-weight: 700;
+ 	color:lightgrey;
 	margin: 0px;
-	opacity: 0.9;
-	margin-top: 180px;
-
+	margin-top: 20px;
+	margin-left: 80px;
 }
 .nom{	
-	font-family: Roboto;
+	font-family: Poppins;
  	font-weight: 500;
- 	font-size: 41px; 
- 	color:#F0F0F0; 
-	margin-top: 0px;
-	opacity: 0.6;
-	position:relative;
-	position:absolute;
-	top: 392px;
+ 	font-size: 20px; 
+	color:lightgrey;
+	margin: 0px;
+	margin-top: 20px;
+	margin-left: 10px;
  }
-.fond_nom {
-	top: 70px;
-	position: absolute;
-	z-index: -1;
+/*----------------------------------------------------ACCUEIL--------------------------------------------------------------------*/
+.bande_photomontage /*CASE*/
+ {
+	display: flex;
+	margin: 0;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 200px;
+ }
+ .lien_image {
+	 width: 50%;
+	 display: flex;
+	 justify-content: center;
+ }
+.couverture {
+	opacity: 0.8;
+	margin-top: 20px; 
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+}
+.couverture:hover {
+	opacity:0.7;
+}
 
- }
 
  /*----------------------------------------------------CARROUSSEL--------------------------------------------------------------------*/
 
@@ -209,13 +225,13 @@ body {
 
  /*---------------------------------------------------- DUT MMI --------------------------------------------------------------------*/
 
-
-
 .DUT_MMI_case {
 	display: flex;
 	justify-content: center;
 	margin-bottom: 20px;
-	margin-top: 50px;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 .DUT_MMI_a{
@@ -254,7 +270,7 @@ body {
 /*-------------------------------------------------------------------------------------DUT MMI------------------------------------------------------------------------------------------------*/
 
 .presentation_dut_mmi_case {
-	margin-top: 100px;
+	padding-top: 100px;
 	margin-bottom: 100px;
 
 }
@@ -346,15 +362,14 @@ body {
 /*------------------------------------------------------ FOOTER -----------------------------------------------*/
 
 .by {
-	background-color: black;
+	background-color:#0D0D0D;
 	height: 20px;
 	padding-top: 0px;
 	padding-bottom: 40px;
 }
 .by_text {
 	margin-top: 10px;
-	font-family: Roboto;
-	font-weight: bold;
+	font-family: Poppins;
 	text-align: center;
 	color: #DE6110;
 }
