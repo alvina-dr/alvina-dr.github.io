@@ -1,0 +1,14 @@
+.photomontage_total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photomontage_image {
+	opacity: 0.8;
+	margin-top: 20px; 
+	margin-bottom: 20px;
+	display: flex;
+    justify-content: center;
+    width: 60%;
+}
