@@ -10,5 +10,21 @@
 	margin-bottom: 20px;
 	display: flex;
     justify-content: center;
+
+}
+.lien_photomontage {
     width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.date_photomontage {
+	font-family: Poppins;
+	font-size: 25px;
+	font-weight: 500;
+	color: lightgrey;
+	text-decoration: none;
+	position: absolute;
+    background-color: rgba(0, 0, 0, 0.61);
+    align-self: flex-end;
 }

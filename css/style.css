@@ -19,9 +19,9 @@ body {
 
 /*---------------------------------------- TEXTES -----------------------------------------------*/
 .presentation_text{
-	color: #F0F0F0;
-	font-family: Roboto; 
-	font-size: 15px;
+	color: lightgrey;
+	font-family: Poppins; 
+	font-size: 16px;
 	margin-left: 20%;
 	margin-right: 20%;
 	text-align: center;
@@ -283,6 +283,9 @@ body {
   justify-content: center;
 }
 
+.carousel_infographie {
+	top:80px;
+}
 
 .carousel-cell {
   height: 400px;
@@ -300,8 +303,8 @@ body {
 	justify-content: center;
 	margin-bottom: 20px;
 	margin-top: 20px;
-	margin-left: 20px;
-	margin-right: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .DUT_MMI_a{
@@ -311,14 +314,25 @@ body {
 	width: 100%
 }
 .DUT_MMI_image {
-	border-radius: 50px;
-	width: 80%;
+	width: 95%;
 	align-self: center;
 }
 .DUT_MMI_image:hover {
 	opacity:0.5;
 }
+.presentation_dut_mmi_case {
+	padding-top: 100px;
+	margin-bottom: 100px;
 
+}
+.DUT_MMI_image_titre {
+	text-align: center;
+	color: #F0F0F0;
+	font-family: Poppins;
+	font-weight: 500;
+	font-size: 15px;
+	margin-bottom: 10px;
+}
 /*------------------------------------------------------- MEDIAS ------------------------------------------------------------------*/
 .image {
 	width:32.5%;
@@ -336,23 +350,6 @@ body {
 	margin-bottom: 0;
 	position: relative;
 
-}
-/*-------------------------------------------------------------------------------------DUT MMI------------------------------------------------------------------------------------------------*/
-
-.presentation_dut_mmi_case {
-	padding-top: 100px;
-	margin-bottom: 100px;
-
-}
-
-
-.DUT_MMI_image_titre {
-	text-align: center;
-	color: #F0F0F0;
-	font-family: Roboto;
-	font-weight: bold;
-	font-size: 150%;
-	margin-bottom: 10px;
 }
 
 /*---------------------------------------------------- PROJETS PERSO --------------------------------------------------------------*/
