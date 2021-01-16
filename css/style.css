@@ -36,28 +36,11 @@ body {
 	text-align: justify;
 }
 
-.DUT_MMI_title {
-	font-family: Montserrat;
-	font-size: 700%;
-	margin: 0;
-	margin-left: 40px;
-	color: #161616;
-}
-
 .lien {
 	color:#DE6110;
 	text-decoration: underline;
 }
 /*---------------------------------------- CASES -------------------------------------------------*/
-
-.DUT_MMI_case_title {
-	margin-top: 110px;
-	background-color: #F0F0F0;
-	border-radius:20px 0px 0px 20px;
-	margin-bottom: 20px;
-	margin-left: 300px;
-	opacity: 0.9;
-}
 
 .row_simple {
 	padding-top: 100px;
@@ -258,8 +241,6 @@ body {
 .couverture:hover {
 	opacity:0.7;
 }
-
-
 .category_title {
 	font-family: Poppins;
 	font-size: 40px;
@@ -296,43 +277,6 @@ body {
   counter-increment: carousel-cell;
 }
 
- /*---------------------------------------------------- DUT MMI --------------------------------------------------------------------*/
-
-.DUT_MMI_case {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 20px;
-	margin-top: 20px;
-	margin-left: 10px;
-	margin-right: 10px;
-}
-
-.DUT_MMI_a{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 100%
-}
-.DUT_MMI_image {
-	width: 95%;
-	align-self: center;
-}
-.DUT_MMI_image:hover {
-	opacity:0.5;
-}
-.presentation_dut_mmi_case {
-	padding-top: 100px;
-	margin-bottom: 100px;
-
-}
-.DUT_MMI_image_titre {
-	text-align: center;
-	color: #F0F0F0;
-	font-family: Poppins;
-	font-weight: 500;
-	font-size: 15px;
-	margin-bottom: 10px;
-}
 /*------------------------------------------------------- MEDIAS ------------------------------------------------------------------*/
 .image {
 	width:32.5%;

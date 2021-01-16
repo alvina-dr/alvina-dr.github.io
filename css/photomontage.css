@@ -28,3 +28,16 @@
     background-color: rgba(0, 0, 0, 0.61);
     align-self: flex-end;
 }
+
+.lien_projet {
+    font-family: Poppins;
+	font-size: 25px;
+	font-weight: 500;
+	color: lightgrey;
+	text-decoration: none;
+	position: absolute;
+    background-color: #DE6110;
+    align-self: flex-start;
+    margin-top: 30px;
+    border-radius: 50px;
+}
