@@ -26,3 +26,11 @@
     background-color: rgba(0, 0, 0, 0.61);
     align-self: flex-end;
 }
+.jeu_ligne_case { /*ligne de trois projets*/
+	display: flex;
+    justify-content: space-between;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	margin-left: 15%;
+    margin-right: 15%;
+}
