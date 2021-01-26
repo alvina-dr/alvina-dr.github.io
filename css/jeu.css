@@ -1,0 +1,28 @@
+.jeu_total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lien_jeu {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.jeu_image {
+	opacity: 0.9;
+	margin-top: 20px; 
+	margin-bottom: 20px;
+	display: flex;
+    justify-content: center;
+}
+.date_jeu {
+	font-family: Poppins;
+	font-size: 25px;
+	font-weight: 500;
+	color: lightgrey;
+	text-decoration: none;
+	position: absolute;
+    background-color: rgba(0, 0, 0, 0.61);
+    align-self: flex-end;
+}
