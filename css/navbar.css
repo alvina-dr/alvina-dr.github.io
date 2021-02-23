@@ -35,6 +35,4 @@
 .navbar nav li a:hover {
  	color:lightgrey;
  }  
-#navbar {
-	transition: top 0.3s;
-}
+

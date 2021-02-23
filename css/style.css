@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+
 
 /*----------------------------------------------------GÉNÉRAL--------------------------------------------------------------------*/
 
@@ -192,10 +195,10 @@ body {
 	margin: 0;
 }
 .present_big {
-	font-family: East Sea Dokdo;
-	font-size: 180px;
+	font-family: Oswald;
+	font-size: 120px;
 	color: darkgrey;
-	font-weight: 500;
+	font-weight: 700;
 	margin: 0;
 	position:absolute;
 	top: 150px;
@@ -368,3 +371,15 @@ body {
 .social_menu ul li a:hover {
     transform: rotate(0deg) skew(0deg) translate(0, -10px); /*animation quand les rectangles sont survolés*/
 }
+
+
+span {
+	border-right: .05em solid;
+	animation: caret 1s steps(1) infinite;
+  }
+  
+  @keyframes caret {
+	50% {
+	  border-color: transparent;
+	}
+  }
