@@ -239,38 +239,47 @@ body {
 	padding-top: 300px;
 	margin-bottom: 100px;
  }
+ .presentation_category /*CASE*/
+ {
+	display: flex;
+	margin: 0;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 300px;
+	margin-bottom: 100px;
+ }
  .lien_image {
-	 width: 50%;
+	 width: 60%;
 	 display: flex;
 	 justify-content: center;
 	 align-items: center;
  }
 .couverture {
-	opacity: 0.8;
-	margin-top: 20px; 
-	margin-bottom: 20px;
+	opacity: 1;
 	display: flex;
 	justify-content: center;
-}
-.couverture:hover {
-	opacity:0.7;
+	width: 100%;
 }
 .category_title {
 	font-family: Poppins;
-	font-size: 40px;
-	font-weight: 500;
-	color: lightgrey;
+	font-size: 25px;
+	font-weight: 550;
+	color: rgb(161, 161, 161);
 	text-decoration: none;
-	position: absolute;
-	background-color: rgba(0, 0, 0, 0.61);
+	margin-top: 10px;
+	align-self: center;
 }
+
  /*----------------------------------------------------CARROUSSEL--------------------------------------------------------------------*/
 
 /* external css: flickity.css */
 
 * { box-sizing: border-box; }
 
-
+.card {
+	width: 100%;
+}
 .carousel {
   position: relative;
   overflow-x: hidden;
@@ -383,3 +392,52 @@ span {
 	  border-color: transparent;
 	}
   }
+
+/*----------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------*/
+
+
+
+.card .wrapper {
+	background-color: rgb(0, 0, 0);
+    position: relative;
+	overflow: hidden;
+
+}
+.card .wrapper:hover .data {
+  transform: translateY(0);
+}
+.card .data {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translateY(calc(70px + 1em));
+  transition: transform 0.3s;
+}
+.card .data .content {
+  padding: 1em;
+  position: relative;
+  z-index: 1;
+}
+
+.card .text {
+  height: 70px;
+  margin: 0;
+  color: rgb(161, 161, 161);
+  font-family: Poppins;
+}
+.card input[type=checkbox] {
+  display: none;
+}
+.card input[type=checkbox]:checked + .menu-content {
+  transform: translateY(-60px);
+}
+
+/*.example-1 .wrapper {
+  background: url(../RESSOURCES/Couverture_Web.jpg) 20% 1%/cover no-repeat;
+}*/
+
+.example-1 .content {
+  background-color: rgba(0, 0, 0, 0.801);
+}
+
