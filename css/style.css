@@ -571,3 +571,7 @@ span {
 	left: 20px;
 	padding-top: 10px;
 }
+
+.bouton_remonter:hover {
+	color: #DE6110;
+}
