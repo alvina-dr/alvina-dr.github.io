@@ -14,6 +14,9 @@ body {
 	background-size: 35%;
 	background-color: #111111;
 }
+html {
+    scroll-behavior: smooth;
+}
 .fin_de_page { /*CASE*/
 	width: 100%; /*largeur en pourcentage de la fenêtre du navigateur*/
     height: 400px;
@@ -194,7 +197,7 @@ body {
 	font-weight: 600;
 	margin: 0;
 }
-.present_big {
+.present_big { /*titre Alvina DR*/
 	font-family: Oswald;
 	font-size: 120px;
 	color: darkgrey;
@@ -381,9 +384,7 @@ body {
     transform: rotate(0deg) skew(0deg) translate(0, -10px); /*animation quand les rectangles sont survolés*/
 }
 
-html {
-    scroll-behavior: smooth;
-}
+
 span {
 	border-right: .05em solid;
 	animation: caret 1s steps(1) infinite;
@@ -574,4 +575,9 @@ span {
 
 .bouton_remonter:hover {
 	color: #DE6110;
+}
+
+.espace {
+	width: 100%;
+	height: 100px;
 }
