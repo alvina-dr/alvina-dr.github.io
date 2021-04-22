@@ -47,16 +47,22 @@
         font-family: Poppins;
         font-size: 18px;
         font-weight: 700;
-        color: lightgrey;
+        color: rgb(0, 0, 0);
         text-decoration: none;
         position: absolute;
-        background-color: #000000;
+        background-color: lightgrey;
         margin-top: 30px;
-        padding: 5px 15px;
+        padding: 10px 20px;
         align-self: flex-start;
+        transition: 0.3s;
     }
     
     .lien_projet:hover {
+        padding: 5px 15px;
+        padding-left: 20px;
         color: rgb(0, 0, 0);
-        background-color: lightgrey;
+        background-color: #DE6110;
+        margin: 5px;
+        margin-top: 35px;
+        margin-left: 0;
     }
