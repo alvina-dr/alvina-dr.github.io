@@ -79,8 +79,6 @@ html {
     color: lightgrey;
     font-family: Poppins;
     font-size: 16px;
-    margin-left: 5%;
-    margin-right: 5%;
     text-align: justify;
 }
 
@@ -109,6 +107,8 @@ html {
     flex-direction: row;
     justify-content: center;
     align-items: space-around;
+    margin-left: 3.5%;
+    margin-right: 3.5%;
 }
 
 #start {
@@ -155,7 +155,7 @@ html {
 
 .gallerie_image {
     /*border-radius: 50px;*/
-    width: 80%;
+    width: 100%;
     align-self: center;
 }
 
