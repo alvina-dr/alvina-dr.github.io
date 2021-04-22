@@ -16,12 +16,13 @@
 }
 
 .row_simple_present {
-    width: 100%;
+    width: 95%;
     margin-top: 0px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-bottom: 20px;
+    margin-left: 5%;
 }
 
 .explication_text_present {
@@ -40,7 +41,7 @@
     color: darkgrey;
     font-weight: 700;
     margin: 0;
-    margin-left: 5%;
+    margin-left: 7.5%;
     text-decoration: underline;
 }
 
