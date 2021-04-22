@@ -1,63 +1,62 @@
-.photomontage_bande
-/*CASE*/
-
-{
-    display: flex;
-    margin: 0;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 300px;
-    margin-bottom: 100px;
-}
-
-.photomontage_total {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.photomontage_image {
-    opacity: 0.9;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.lien_photomontage {
-    width: 45%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-}
-
-.date_photomontage {
-    font-family: Poppins;
-    font-size: 20px;
-    font-weight: 500;
-    color: lightgrey;
-    text-decoration: none;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.61);
-    align-self: flex-end;
-}
-
-.lien_projet {
-    font-family: Poppins;
-    font-size: 18px;
-    font-weight: 700;
-    color: lightgrey;
-    text-decoration: none;
-    position: absolute;
-    background-color: #000000;
-    align-self: flex-start;
-    margin-top: 30px;
-    padding: 5px 15px;
-    border-radius: 50px;
-}
-
-.lien_projet:hover {
-    color: rgb(0, 0, 0);
-    background-color: lightgrey;
-}
+    .photomontage_bande
+    /*CASE*/
+    
+    {
+        display: flex;
+        margin: 0;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 300px;
+        margin-bottom: 100px;
+    }
+    
+    .photomontage_total {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        margin: auto;
+    }
+    
+    .photomontage_image {
+        opacity: 0.9;
+        width: 100%;
+    }
+    
+    .lien_photomontage {
+        width: 100%;
+        display: flex;
+        margin: 20px;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .date_photomontage {
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: 500;
+        color: lightgrey;
+        text-decoration: none;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.61);
+        align-self: flex-end;
+    }
+    
+    .lien_projet {
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 700;
+        color: lightgrey;
+        text-decoration: none;
+        position: absolute;
+        background-color: #000000;
+        margin-top: 30px;
+        padding: 5px 15px;
+        align-self: flex-start;
+    }
+    
+    .lien_projet:hover {
+        color: rgb(0, 0, 0);
+        background-color: lightgrey;
+    }
