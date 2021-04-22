@@ -22,7 +22,7 @@
     flex-direction: row;
     justify-content: center;
     margin-bottom: 20px;
-    margin-left: 5%;
+    margin: auto;
 }
 
 .explication_text_present {
@@ -31,7 +31,7 @@
     font-size: 16px;
     margin: 0;
     text-align: justify;
-    margin-left: 5%;
+    margin-left: 3%;
 }
 
 .present_big_present {
@@ -41,7 +41,7 @@
     color: darkgrey;
     font-weight: 700;
     margin: 0;
-    margin-left: 7.5%;
+    margin-left: 4%;
     text-decoration: underline;
 }
 
@@ -52,7 +52,7 @@
     color: darkgrey;
     font-weight: 700;
     margin: 0;
-    margin-left: 5%;
+    margin-left: 3%;
 }
 
 .btn_download {
@@ -62,7 +62,7 @@
     text-decoration: none;
     font-family: Poppins;
     margin: 0;
-    margin-left: 40px;
+    margin-left: 25px;
     font-weight: 700;
     transition: 0.3s;
 }
@@ -72,9 +72,19 @@
     background-color: #DE6110;
     color: lightgrey;
     margin: 3px;
-    margin-left: 43px;
+    margin-left: 28px;
 }
 
 .logo_comp {
     margin: 10px;
+    transition: 0.3s;
+}
+
+.logo_comp:hover {
+    padding: 10px;
+}
+
+.line_logo {
+    background-color: lightgrey;
+    padding: 0 10px;
 }
