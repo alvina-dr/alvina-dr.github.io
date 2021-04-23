@@ -88,3 +88,26 @@
     background-color: lightgrey;
     padding: 0 10px;
 }
+
+.name_skill {
+    color: rgb(0, 0, 0);
+    font-family: Poppins;
+    font-size: 13px;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.skill_logo {
+    display: flex;
+    align-self: center;
+}
+
+.skill_logo:hover {
+    margin: 10px;
+}
+
+.fit_content {
+    width: fit-content;
+    margin: 0;
+}

@@ -39,15 +39,15 @@ html {
     z-index: 5;
 }
 
-
-/*IMPORTATION HTML DANS UN AUTRE FICHIER FIN*/
-
 .ft {
     background-color: #0d0d0d00;
     background: none;
     margin: 0;
     padding: 0;
 }
+
+
+/*IMPORTATION HTML DANS UN AUTRE FICHIER FIN*/
 
 #marker {
     position: absolute;
@@ -315,7 +315,7 @@ b {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 350px;
+    height: 100%;
 }
 
 .category_title {
@@ -340,29 +340,6 @@ b {
 
 .card {
     width: 100%;
-}
-
-.carousel {
-    position: relative;
-    overflow-x: hidden;
-    height: 500px;
-    justify-content: center;
-}
-
-.carousel_infographie {
-    top: 80px;
-}
-
-.carousel-cell {
-    height: 400px;
-    width: 50%;
-    margin: 40px/*5%*/
-    ;
-    /* total width = 50% + 5% + 5% = 60% */
-    opacity: 1;
-    border-radius: 5px;
-    /*arrondi des angles*/
-    counter-increment: carousel-cell;
 }
 
 
