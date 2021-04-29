@@ -77,11 +77,25 @@
 
 .logo_comp {
     margin: 10px;
-    transition: 0.3s;
+    transition: 0.2s;
+    align-self: center;
+    justify-self: center;
 }
 
 .logo_comp:hover {
-    padding: 10px;
+    margin: 0 2.5%;
+}
+
+.adobe {
+    width: 10%;
+}
+
+.figma:hover {
+    width: 5%;
+}
+
+.adobe:hover {
+    width: 8%;
 }
 
 .line_logo {
